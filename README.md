@@ -1,6 +1,6 @@
 # Material Design Lite components via mithril.js
 This module provides mithril components which construct html to be used with the [Material Design Lite](http://www.getmdl.io/) framework.
-It provides a simple way to apply the needed classes to create MDL components. It spits out normal html elements, and calls `componentHandler.upgradeDom()` after each render pass. It is designed to work nicely with JSX (via babel or similar).
+It provides a simple way to apply the needed classes to create MDL components. It spits out normal html elements, and calls `componentHandler.upgradeElement(element)` on element creation. It is designed to work nicely with JSX (via babel or similar).
 Not nearly all components are supported right now. I will continue adding them when the need comes up. Your are welcome to submit pull requests :)
 
 ## Basics
