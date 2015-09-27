@@ -191,5 +191,4 @@ All default attributes (`class`, `id` etc.) are assigned to the `input` element.
 **Class:** `mdl-layout__content`
 
 ## Problems
-* Elements should be upgraded individually. Depends on next release of MDL
 * Not really reliable for partial redraws (still works, just flickering etc.), due to mdls js adding elements all over the place (or maybe me being an idiot, not sure)

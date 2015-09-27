@@ -1,11 +1,8 @@
 /* globals componentHandler */
-let timer;
 
-function upgrade() {
+function upgradeElement(element) {
 	if(process.browser && componentHandler) {
-		/* This should later be componentHandler.upgradeElement() */
-		clearTimeout(timer);
-		timer = setTimeout(() => componentHandler.upgradeDom(), 0);
+		componentHandler.upgradeElement(element);
 	}
 }
 
@@ -30,10 +27,10 @@ export default function attributes({id, ripple, primary, primaryDark, active, di
 	}
 
 	/* Try to upgrade all elements and also run a config attribute if passed */
-	attr.config = function(e) {
+	attr.config = function(e, isInitialized) {
 		if(config) config(...arguments);
 
-		if(!noupgrade) upgrade(e);
+		if(!isInitialized && !noupgrade) upgradeElement(e);
 	};
 
 	return attr;
