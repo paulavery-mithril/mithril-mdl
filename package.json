@@ -1,6 +1,6 @@
 {
   "name": "mithril-mdl",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Florian Albertz",
   "license": "BSD-3-Clause",
   "main": "lib/mdl.js",
