@@ -5,10 +5,8 @@ export let Card = {
 	view(ctrl, args, ...children) {
 		args = args || {};
 		let attr = attributes(args);
-		let {shadow} = args;
 
 		attr.class.push('mdl-card');
-		if(shadow) attr.class.push(`mdl-shadow--${shadow}dp`);
 
 		return <div {...attr}>{children}</div>;
 	}
