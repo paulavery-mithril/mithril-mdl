@@ -6,7 +6,7 @@ function upgradeElement(element) {
 	}
 }
 
-export default function attributes({id, ripple, primary, primaryDark, active, disabled, large, config}, noupgrade) {
+export default function attributes({id, ripple, primary, primaryDark, active, disabled, large, shadow, config}, noupgrade) {
 	let attr = {};
 	attr.class = [];
 	attr.class.toString = () => attr.class.join(' ');
@@ -19,6 +19,7 @@ export default function attributes({id, ripple, primary, primaryDark, active, di
 	if(active) attr.class.push('is-active');
 	if(primary) attr.class.push('mdl-color--primary');
 	if(primaryDark) attr.class.push('mdl-color--primary-dark');
+	if(shadow) attr.class.push(`mdl-shadow--${shadow}dp`);
 	if(arguments[0].class) attr.class.push(arguments[0].class);
 
 	/* Keep all event handlers */
