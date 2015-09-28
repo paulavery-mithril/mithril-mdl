@@ -27,7 +27,7 @@ export let Fab = {
 		attr.class.push(mini ? 'mdl-button--mini-fab' : 'mdl-button--fab');
 		if(color) attr.class.push('mdl-button--colored');
 		if(accent) attr.class.push('mdl-button--accent');
-		if(raised) attr.class.push('mdl-shadow--4dp');
+		if(raised) attr.class.push('mdl-button--raised');
 		if(primary) attr.class.push('mdl-button--primary');
 
 		return <button {...attr}>{children}</button>;
