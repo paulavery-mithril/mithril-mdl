@@ -190,5 +190,31 @@ All default attributes (`class`, `id` etc.) are assigned to the `input` element.
 
 **Class:** `mdl-layout__content`
 
+### Card
+**Tag:** `div`
+
+**Class:** `mdl-card`
+
+**Attributes:**
+* `shadow`: Sets `mdl-shadow--${shadow}db`. Should be 2, 3, 4, 6, 8, or 16
+
+### CardTitle
+**Tag:** `div`
+
+**Class:** `mdl-card--title`
+
+**Attributes:**
+* `expand`: Sets `mdl-card--expand`
+* `size`: Sets header tag of text. Should be 1 - 6
+
+### CardSupportingText
+**Tag:** `div`
+
+**Class:** `mdl-card__supporting-text`
+
+**Attributes:**
+* `expand`: Sets `mdl-card--expand`
+* `border`: Sets `mdl-card--border`
+
 ## Problems
 * Not really reliable for partial redraws (still works, just flickering etc.), due to mdls js adding elements all over the place (or maybe me being an idiot, not sure)
