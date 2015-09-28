@@ -36,7 +36,7 @@ export let CardSupportingText = {
 		let {border, expand} = attr;
 
 		attr.class.push('mdl-card__title-text');
-		if(border) attr.class.push('mdl-shadow--border');
+		if(border) attr.class.push('mdl-card--border');
 		if(expand) attr.class.push('mdl-card--expand');
 
 		return <div {...attr}>{children}</div>;
