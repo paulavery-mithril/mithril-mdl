@@ -12,6 +12,7 @@ export let Header = {
 		if(scroll) attr.class.push('mdl-layout__header--scroll');
 		if(waterfall) attr.class.push('mdl-layout__header--waterfall');
 		if(transparent) attr.class.push('mdl-layout__header--transparent');
+		if(castShadow) attr.class.push('is-casting-shadow');
 
 		return <header {...attr}>{children}</header>;
 	}
