@@ -21,6 +21,7 @@ export default function attributes({id, ripple, primary, primaryDark, active, di
 	if(primaryDark) attr.class.push('mdl-color--primary-dark');
 	if(shadow) attr.class.push(`mdl-shadow--${shadow}dp`);
 	if(color) attr.class.push(`mdl-color--${color}`);
+	if(textColor) attr.class.push(`mdl-color-text--${textColor}`);
 
 	let classArg = arguments[0].class;
 	if(classArg) {
