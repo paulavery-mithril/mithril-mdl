@@ -6,7 +6,7 @@ function upgradeElement(element) {
 	}
 }
 
-export default function attributes({id, ripple, primary, primaryDark, active, disabled, large, shadow, config}, noupgrade) {
+export default function attributes({id, ripple, primary, primaryDark, color, textColor, active, disabled, large, shadow, config}, noupgrade) {
 	let attr = {};
 	attr.class = [];
 	attr.class.toString = () => attr.class.join(' ');
