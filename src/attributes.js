@@ -20,7 +20,13 @@ export default function attributes({id, ripple, primary, primaryDark, active, di
 	if(primary) attr.class.push('mdl-color--primary');
 	if(primaryDark) attr.class.push('mdl-color--primary-dark');
 	if(shadow) attr.class.push(`mdl-shadow--${shadow}dp`);
-	if(arguments[0].class) attr.class.push(arguments[0].class);
+	if(color) attr.class.push(`mdl-color--${color}`);
+
+	let classArg = arguments[0].class;
+	if(classArg) {
+		if(typeof(classArg) === 'string') attr.class.push(classArg);
+		else attr.class.push.apply(attr.class, classArg); // extend with array of classes
+	}
 
 	/* Keep all event handlers */
 	for(let prop in arguments[0]) {
