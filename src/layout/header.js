@@ -5,7 +5,7 @@ export let Header = {
 	view(ctrl, args, ...children) {
 		args = args || {};
 		let attr = attributes(args);
-		let {scroll, waterfall, transparent} = args;
+		let {scroll, waterfall, transparent, castShadow} = args;
 
 		attr.class.push('mdl-layout__header');
 
