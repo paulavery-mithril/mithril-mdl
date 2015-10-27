@@ -13,7 +13,7 @@ export let Icon = {
 export let Spacer = {
 	view(ctrl, args) {
 		let attr = attributes(args || {});
-		attr.class.push('mdl-layout__spacer');
+		attr.class.push('mdl-layout-spacer');
 
 		return <div {...attr} />;
 	}
