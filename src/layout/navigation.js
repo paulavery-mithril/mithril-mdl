@@ -23,12 +23,12 @@ export let Navigation = {
 };
 
 export let NavLink = {
-	view(ctrl, args, name) {
+	view(ctrl, args, ...children) {
 		args = args || {};
 		let attr = attributes(args);
 		attr.class.push('mdl-navigation__link');
 		attr.href = args.href;
 
-		return <a {...attr}>{name}</a>;
+		return <a {...attr}>{children}</a>;
 	}
 };
