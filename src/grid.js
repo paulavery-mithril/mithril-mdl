@@ -5,8 +5,10 @@ export let Grid = {
 	view(ctrl, args, ...children) {
 		args = args || {};
 		let attr = attributes(args);
+		let {nospacing} = args;
 
 		attr.class.push('mdl-grid');
+		if (nospacing) attr.class.push('mdl-grid--no-spacing');
 		return <div {...attr}>{children}</div>;
 	}
 };
