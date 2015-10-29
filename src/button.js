@@ -1,17 +1,22 @@
 import m from 'mithril';
 import attributes from './attributes';
+import {Icon} from './misc';
 
 export let Button = {
 	view(ctrl, args, ...children) {
 		args = args || {};
 		let attr = attributes(args);
-		let {raised, accent, colored, primary} = args;
+		let {raised, accent, colored, primary, icon} = args;
 
 		attr.class.push('mdl-button', 'mdl-js-button');
 		if(colored) attr.class.push('mdl-button--colored');
 		if(accent) attr.class.push('mdl-button--accent');
 		if(raised) attr.class.push('mdl-button--raised');
 		if(primary) attr.class.push('mdl-button--primary');
+		if(icon) {
+			attr.class.push('mdl-button--icon');
+			if(typeof(icon) === 'string' && children.length === 0) children = <Icon>{icon}</Icon>;
+		}
 
 		return <button {...attr}>{children}</button>;
 	}
