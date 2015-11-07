@@ -2,8 +2,7 @@ BIN = ./node_modules/.bin
 SRC = $(wildcard src/*.js) $(wildcard src/*/*.js) $(wildcard src/*/*/*.js)
 LIB = $(SRC:src/%.js=lib/%.js)
 
-build: babel
-babel: $(LIB)
+build: $(LIB)
 
 lib/%.js: src/%.js
 	@mkdir -p $(@D)
@@ -24,6 +23,6 @@ release-minor: build lint
 release-patch: build lint
 	@$(BIN)/bump --patch
 
-publish:
-	npm publish
+publish: build lint
 	git push --tags origin HEAD:master
+	npm publish

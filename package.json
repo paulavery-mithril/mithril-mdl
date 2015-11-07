@@ -12,6 +12,10 @@
     "material design",
     "material design lite"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulAvery/mithril-mdl.git"
+  },
   "dependencies": {
     "mithril": "lhorie/mithril.js#next"
   },
@@ -20,10 +24,6 @@
     "eslint": "^1.5.1",
     "eslint-plugin-react": "^3.6.3",
     "version-bump": "^0.1.0"
-  },
-  "scripts": {
-    "test": "make lint",
-    "prepublish": "make && make lint"
   },
   "eslintConfig": {
     "env": {
