@@ -15,13 +15,13 @@ lint:
 	@$(BIN)/eslint src
 
 release-major: build lint
-	@$(BIN)/bump --major
+	@npm version major
 
 release-minor: build lint
-	@$(BIN)/bump --minor
+	@npm version minor
 
 release-patch: build lint
-	@$(BIN)/bump --patch
+	@npm version patch
 
 publish: build lint
 	git push --tags origin HEAD:master
