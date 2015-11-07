@@ -12,6 +12,9 @@
     "material design",
     "material design lite"
   ],
+  "scripts": {
+    "test": "make lint"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/PaulAvery/mithril-mdl.git"
