@@ -23,36 +23,7 @@
     "babel-cli": "^6.1.2",
     "babel-plugin-transform-react-jsx": "^6.0.18",
     "babel-preset-es2015": "^6.1.2",
-    "eslint": "^1.5.1",
-    "eslint-plugin-react": "^3.6.3"
-  },
-  "eslintConfig": {
-    "env": {
-      "es6": true,
-      "node": true
-    },
-    "plugins": [
-      "react"
-    ],
-    "ecmaFeatures": {
-      "modules": true,
-      "jsx": true
-    },
-    "rules": {
-      "curly": [
-        2,
-        "multi-line"
-      ],
-      "quotes": [
-        2,
-        "single"
-      ],
-      "react/jsx-uses-react": [
-        2,
-        {
-          "pragma": "m"
-        }
-      ]
-    }
+    "eslint": "^1.9.0",
+    "eslint-plugin-react": "^3.7.1"
   }
 }

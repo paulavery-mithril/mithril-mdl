@@ -25,7 +25,7 @@ export default function attributes({id, ripple, primary, primaryDark, color, tex
 
 	let classArg = arguments[0].class;
 	if(classArg) {
-		if(typeof(classArg) === 'string') {
+		if(typeof classArg === 'string') {
 			attr.class.push(classArg);
 		} else {
 			/* Extend with array of classes */

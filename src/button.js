@@ -15,7 +15,7 @@ export let Button = {
 		if(primary) attr.class.push('mdl-button--primary');
 		if(icon) {
 			attr.class.push('mdl-button--icon');
-			if(typeof(icon) === 'string') children = <Icon>{icon}</Icon>;
+			if(typeof icon === 'string') children = <Icon>{icon}</Icon>;
 		}
 
 		return <button {...attr}>{children}</button>;
