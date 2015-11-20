@@ -7,3 +7,4 @@ export {Grid, Cell} from './grid';
 export {ProgressBar} from './loading';
 export {TextInput} from './input';
 export {Card, CardTitle, CardSupportingText} from './card';
+export {Checkbox, Switch, IconToggle} from './toggles';
