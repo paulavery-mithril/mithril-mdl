@@ -64,14 +64,32 @@ export class Mixable extends Component {
 }
 
 export function applyMixin(mixin, attr, ctx) {
-	if(typeof mixin === 'function') {
-		// Apply a mixin function
-		mixin(attr, ctx);
-	}
-	else {
-		// Apply attributes from mixin
-		for (let prop in mixin) {
-			if(mixin.hasOwnProperty(prop)) attr[prop] = mixin[prop];
+	if (mixin != null) {
+		if(mixin.tag === 'mixin') {
+			// Support special <mixin from={mixinTemplate} {...args} /> style syntax to defined
+			// They'll be compiled to { tag: 'mixin', attrs: {from: mixinTemplate,...args } }
+			// mixinTemplate is either a function receiving any arguments and returning a mixin
+			// or an object with a 'mixin' attribute which does the same.
+			// This allows users to define mixins with a more natural MSX syntax.
+			let args = mixin.attrs;
+			let mixinConstructor = args.from;
+			delete args.from;
+			if(mixinConstructor.mixin != null) {
+				mixin = mixinConstructor.mixin(args)
+			}
+			else {
+				mixin = mixinConstructor(args);
+			}
+		}
+		if(typeof mixin === 'function') {
+			// Apply a mixin function
+			mixin(attr, ctx);
+		}
+		else {
+			// Apply attributes from mixin
+			for (let prop in mixin) {
+				if(mixin.hasOwnProperty(prop)) attr[prop] = mixin[prop];
+			}
 		}
 	}
 }
