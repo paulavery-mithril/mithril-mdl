@@ -75,7 +75,7 @@ export function applyMixin(mixin, attr, ctx) {
 			let mixinConstructor = args.from;
 			delete args.from;
 			if(mixinConstructor.mixin != null) {
-				mixin = mixinConstructor.mixin(args)
+				mixin = mixinConstructor.mixin(args);
 			}
 			else {
 				mixin = mixinConstructor(args);
