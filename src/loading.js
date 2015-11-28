@@ -11,7 +11,11 @@ export let ProgressBar = {
 		attr.class.push('mdl-progress', 'mdl-js-progress');
 		if(!progress) attr.class.push('mdl-progress__indeterminate');
 
-		let config = (el) => {
+		let config = attr.config;
+		attr.config = (...innerArgs) => {
+			config.apply(undefined, innerArgs);
+
+			let el = innerArgs[0];
 			if(progress) {
 				el.addEventListener('mdl-componentupgraded', function() {
 					this.MaterialProgress.setProgress(progress);
