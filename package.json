@@ -23,9 +23,9 @@
     "mithril": "lhorie/mithril.js#next"
   },
   "devDependencies": {
-    "babel-cli": "^6.1.2",
-    "babel-plugin-transform-react-jsx": "^6.0.18",
-    "babel-preset-es2015": "^6.1.2",
+    "babel-cli": "^6.1.18",
+    "babel-plugin-transform-react-jsx": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
     "eslint": "^1.9.0",
     "eslint-plugin-react": "^3.7.1"
   }
