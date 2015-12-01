@@ -4,7 +4,7 @@ import attributes from '../attributes';
 export let Tabs = {
 	view(ctrl, args, ...children) {
 		args = args || {};
-		let attr = attributes(args);
+		let attr = attributes(args, true);
 		attr.class.push('mdl-layout__tab-bar');
 
 		return <div {...attr}>{children}</div>;
