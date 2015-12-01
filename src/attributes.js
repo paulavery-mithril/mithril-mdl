@@ -6,7 +6,7 @@ function upgradeElement(element) {
 	}
 }
 
-export default function attributes({id, ripple, primary, primaryDark, color, textColor, active, disabled, large, shadow, config}, noupgrade) {
+export default function attributes({id, ripple, primary, primaryDark, color, textColor, active, disabled, checked, large, shadow, config}, noupgrade) {
 	let attr = {};
 	attr.class = [];
 	attr.class.toString = () => attr.class.join(' ');
@@ -14,6 +14,7 @@ export default function attributes({id, ripple, primary, primaryDark, color, tex
 	/* Some common attributes to transfer and set */
 	if(id) attr.id = id;
 	if(disabled) attr.disabled = true;
+	if(checked) attr.checked = true;
 	if(large) attr.class.push('mdl-layout--large-screen-only');
 	if(ripple) attr.class.push('mdl-js-ripple-effect');
 	if(active) attr.class.push('is-active');

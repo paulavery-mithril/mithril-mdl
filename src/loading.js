@@ -23,3 +23,17 @@ export let ProgressBar = {
 		return <div {...attr} config={config}></div>;
 	}
 };
+
+export let Spinner = {
+	view(ctrl, args) {
+		args = args || {};
+		let attr = attributes(args);
+		let {active, singleColor} = args;
+
+		attr.class.push('mdl-spinner', 'mdl-js-spinner');
+		if(active) attr.class.push('is-active');
+		if(singleColor) attr.class.push('mdl-spinner--single-color');
+
+		return <div {...attr}></div>;
+	}
+};
