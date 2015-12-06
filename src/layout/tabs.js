@@ -14,7 +14,7 @@ export let Tabs = {
 export let Tab = {
 	view(ctrl, args, title) {
 		args = args || {};
-		let attr = attributes(args, args.config);
+		let attr = attributes(args, {noupgrade: args.config});
 		attr.class.push('mdl-layout__tab');
 		attr.href = args.href;
 

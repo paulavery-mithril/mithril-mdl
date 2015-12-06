@@ -1,3 +1,5 @@
+import { applyMixins } from './mixin';
+
 /* globals componentHandler */
 
 function upgradeElement(element) {
@@ -6,10 +8,10 @@ function upgradeElement(element) {
 	}
 }
 
-export default function attributes({id, ripple, primary, primaryDark, color, textColor, active, disabled, large, shadow, config}, noupgrade) {
+export default function attributes({id, ripple, primary, primaryDark, color, textColor, active, disabled, large, shadow, mixin, config}, ctx) {
 	let attr = {};
 	attr.class = [];
-	attr.class.toString = () => attr.class.join(' ');
+	attr.class.toString = function() { return this.join(' '); };
 
 	/* Some common attributes to transfer and set */
 	if(id) attr.id = id;
@@ -38,11 +40,14 @@ export default function attributes({id, ripple, primary, primaryDark, color, tex
 		if(prop.substring(0, 2) === 'on') attr[prop] = arguments[0][prop];
 	}
 
+	/* Apply mixins */
+	if(mixin) applyMixins(mixin, attr, ctx);
+
 	/* Try to upgrade all elements and also run a config attribute if passed */
 	attr.config = function(e, isInitialized) {
 		if(config) config(...arguments);
 
-		if(!isInitialized && !noupgrade) upgradeElement(e);
+		if(!isInitialized && !(ctx && ctx.noupgrade)) upgradeElement(e);
 	};
 
 	return attr;
