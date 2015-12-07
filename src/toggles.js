@@ -3,7 +3,7 @@ import attributes from './attributes';
 import {Icon} from './misc';
 import {randomID, joinClasses} from './utils';
 
-export let Toggle = {
+let Toggle = {
 	innerType: 'checkbox',
 
 	view(ctrl, args, ...children) {
