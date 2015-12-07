@@ -1,16 +1,7 @@
 import m from 'mithril';
 import attributes from './attributes';
 import {Icon} from './misc';
-
-// Odds of collision for a 32-bit random number are quite low, but perfectly
-// feasible on a page with many elements (e.g. 1 in 10,000 for a 1000).
-// 64-bit provides acceptable low collision rates.
-const randMax = Math.pow(2, 64);
-let randomID = ()=> Math.floor(Math.random() * randMax).toString(36);
-
-function joinClasses() {
-	return this.join(' ');
-}
+import {randomID, joinClasses} from './utils';
 
 export let Toggle = {
 	innerType: 'checkbox',
@@ -57,6 +48,7 @@ export let Toggle = {
 			</label>;
 	}
 };
+
 export let Checkbox = {
 	__proto__: Toggle,
 	innerClass: ['mdl-checkbox__input'],
