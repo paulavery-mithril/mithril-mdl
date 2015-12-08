@@ -21,3 +21,13 @@ export let Tab = {
 		return <a {...attr}>{title}</a>;
 	}
 };
+
+export let TabPanel = {
+	view(ctrl, args, ...children) {
+		args = args || {};
+		let attr = attributes(args, args.config);
+		attr.class.push('mdl-layout__tab-panel');
+
+		return <section {...attr}>{children}</section>;
+	}
+};

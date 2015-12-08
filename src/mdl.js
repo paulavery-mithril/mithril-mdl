@@ -1,7 +1,7 @@
 export {default as attributes} from './attributes';
 
 export {Icon, Spacer} from './misc';
-export {Layout, Header, HeaderRow, Title, Tabs, Tab, Drawer, Navigation, NavLink, Content} from './layout';
+export {Layout, Header, HeaderRow, Title, Tabs, Tab, TabPanel, Drawer, Navigation, NavLink, Content} from './layout';
 export {Button, Fab} from './button';
 export {Badge} from './badge';
 export {Grid, Cell} from './grid';
