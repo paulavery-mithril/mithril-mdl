@@ -1,5 +1,5 @@
 BIN = ./node_modules/.bin
-SRC = $(wildcard src/*.js) $(wildcard src/*/*.js) $(wildcard src/*/*/*.js)
+SRC = $(wildcard src/*.js) $(wildcard src/*/*.js) $(wildcard src/*/*/*.js) $(wildcard src/*/*/*/*.js)
 LIB = $(SRC:src/%.js=lib/%.js)
 
 build: $(LIB)
