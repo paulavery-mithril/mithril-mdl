@@ -1,5 +1,7 @@
 # Header
 ## Header
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-layout mdl-js-layout`
 
@@ -10,5 +12,7 @@
 * `fixedTabs`: Sets `mdl-layout--fixed-tabs`
 
 ## HeaderRow
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-layout__header-row`

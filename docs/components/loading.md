@@ -1,5 +1,7 @@
 # Loading Indicators
 ## ProgressBar
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-progress mdl-js-progress mdl-progress__indeterminate`
 

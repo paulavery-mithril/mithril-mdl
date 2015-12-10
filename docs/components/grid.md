@@ -1,9 +1,13 @@
 # Grid System
 ## Grid
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-grid`
 
 ## Cell
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-cell`
 

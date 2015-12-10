@@ -1,5 +1,7 @@
 # Cards
 ## Card
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-card`
 
@@ -12,8 +14,9 @@
 
 **Attributes:**
 * `expand`: Sets `mdl-card--expand`
-* `size`: Sets header tag of text. Should be 1 - 6
 
-## CardSupportingText
+## CardText
+*mixin*
+
 **Tag:** `div`  
 **Class:** `mdl-card__supporting-text`

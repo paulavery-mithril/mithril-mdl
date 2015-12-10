@@ -1,5 +1,7 @@
 # Buttons
 ## Fab
+*mixin*
+
 **Tag:** `button`  
 **Class:** `mdl-button mdl-js-button mdl-button--fab`
 
@@ -11,6 +13,8 @@
 * `primary`:  Sets `mdl-button--primary`
 
 ## Button
+*mixin*
+
 **Tag:** `button`  
 **Class:** `mdl-button mdl-js-button`
 
