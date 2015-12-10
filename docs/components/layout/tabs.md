@@ -1,10 +1,10 @@
 # Tabs
 ## Tabs
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-layout__tab-bar`
 
 ## Tab
-**Tag:** `a`
+**Tag:** `a`  
 **Class:** `mdl-layout__tab`
 
 **Attributes:**

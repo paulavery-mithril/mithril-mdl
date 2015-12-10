@@ -1,10 +1,10 @@
 # Grid System
 ## Grid
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-grid`
 
 ## Cell
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-cell`
 
 **Attributes:**

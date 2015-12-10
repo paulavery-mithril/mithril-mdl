@@ -1,4 +1,4 @@
 # Misc
 ## Icon
-**Tag:** `i`
+**Tag:** `i`  
 **Class:** `material-icons`

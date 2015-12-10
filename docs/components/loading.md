@@ -1,6 +1,6 @@
 # Loading Indicators
 ## ProgressBar
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-progress mdl-js-progress mdl-progress__indeterminate`
 
 **Attributes:**

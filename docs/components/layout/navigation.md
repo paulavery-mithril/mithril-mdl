@@ -1,14 +1,14 @@
 # Navigation
 ## Drawer
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-layout__drawer`
 
 ## Navigation
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-navigation`
 
 ## NavLink
-**Tag:** `a`
+**Tag:** `a`  
 **Class:** `mdl-navigation__link`
 
 **Attributes:**

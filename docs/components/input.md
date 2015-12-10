@@ -1,6 +1,6 @@
 # Inputs
 ## TextInput
-**Tag:** `div` wrapping `input`, `label` and optionally `span`
+**Tag:** `div` wrapping `input`, `label` and optionally `span`  
 **Class:** `mdl-textfield mdl-js-textfield`, `mdl-textfield__label` and `mdl-textfield__error`
 
 **Attributes:**

@@ -1,6 +1,6 @@
 # Buttons
 ## Fab
-**Tag:** `button`
+**Tag:** `button`  
 **Class:** `mdl-button mdl-js-button mdl-button--fab`
 
 **Attributes:**
@@ -11,7 +11,7 @@
 * `primary`:  Sets `mdl-button--primary`
 
 ## Button
-**Tag:** `button`
+**Tag:** `button`  
 **Class:** `mdl-button mdl-js-button`
 
 **Attributes:**

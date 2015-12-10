@@ -1,6 +1,6 @@
 # Layout
 ## Content
-**Tag:** `main`
+**Tag:** `main`  
 **Class:** `mdl-layout__content`
 
 **Attributes:**
@@ -8,7 +8,7 @@
 * `border`: Sets `mdl-card--border`
 
 ## Layout
-**Tag:** `header`
+**Tag:** `header`  
 **Class:** `mdl-layout__header`
 
 **Attributes:**
@@ -17,9 +17,9 @@
 * `transparent`: Sets `mdl-layout__header--transparent`
 
 ## Spacer
-**Tag:** `div`
+**Tag:** `div`  
 **Class:** `mdl-layout__spacer`
 
 ## Title
-**Tag:** `span`
+**Tag:** `span`  
 **Class:** `mdl-layout-title`
