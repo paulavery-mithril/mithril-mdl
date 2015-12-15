@@ -4,7 +4,6 @@ import {mixin, callMixin, baseMixin} from '../../mixin';
 
 export let button = mixin('button', function({raised, accent, colored, primary, icon}) {
 	this.class.push('mdl-button', 'mdl-js-button');
-
 	if(colored) this.class.push('mdl-button--colored');
 	if(accent) this.class.push('mdl-button--accent');
 	if(raised) this.class.push('mdl-button--raised');
@@ -20,7 +19,7 @@ export let Button = {
 		callMixin(button, srcAttribs, trgAttribs);
 
 		if(srcAttribs.icon && typeof srcAttribs.icon === 'string') {
-			children = <Icon>{ children }</Icon>;
+			children = <Icon>{ srcAttribs.icon }</Icon>;
 		}
 
 		return <button {...trgAttribs}>{children}</button>;

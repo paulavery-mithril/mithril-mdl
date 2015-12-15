@@ -1,4 +1,6 @@
-import {mixin, fromMixin} from '../../mixin';
+import m from 'mithril';
+import {Icon} from '../misc/icon';
+import {mixin, callMixin, baseMixin} from '../../mixin';
 
 export let fab = mixin('fab', function({raised, mini, accent, colored, primary}) {
 	this.class.push('mdl-button', 'mdl-js-button');
@@ -9,4 +11,17 @@ export let fab = mixin('fab', function({raised, mini, accent, colored, primary})
 	if(primary) this.class.push('mdl-button--primary');
 });
 
-export let Fab = fromMixin(fab, 'button');
+export let Fab = {
+	view(ctrl, srcAttribs, ...children) {
+		let trgAttribs = {};
+
+		callMixin(baseMixin, srcAttribs, trgAttribs);
+		callMixin(fab, srcAttribs, trgAttribs);
+
+		if(srcAttribs.icon && typeof srcAttribs.icon === 'string') {
+			children = <Icon>{ srcAttribs.icon }</Icon>;
+		}
+
+		return <fab {...trgAttribs}>{children}</fab>;
+	}
+};
