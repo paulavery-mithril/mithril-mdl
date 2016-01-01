@@ -20,7 +20,7 @@
     "url": "https://github.com/PaulAvery/mithril-mdl.git"
   },
   "dependencies": {
-    "mithril": "lhorie/mithril.js#next"
+    "mithril": "^0.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.1.18",
