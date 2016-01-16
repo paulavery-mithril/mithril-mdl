@@ -22,6 +22,6 @@ export let Fab = {
 			children = <Icon>{ srcAttribs.icon }</Icon>;
 		}
 
-		return <fab {...trgAttribs}>{children}</fab>;
+		return <button {...trgAttribs}>{children}</button>;
 	}
 };
