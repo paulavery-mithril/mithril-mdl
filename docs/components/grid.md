@@ -5,6 +5,9 @@
 **Tag:** `div`  
 **Class:** `mdl-grid`
 
+**Attributes:**
+* `nospacing`: Sets `mdl-grid--no-spacing`
+
 ## Cell
 *mixin*
 

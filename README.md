@@ -13,7 +13,7 @@ And these attributes all apply some classes:
 * `primary`: applies `mdl-color--primary`
 * `primaryDark`: applies `mdl-color--primary-dark`
 * `shadow`: applies `mdl-shadow--${shadow}dp`
-* `color`: applies `mdl-color--${textColor}`
+* `color`: applies `mdl-color--${color}`
 * `textColor`: applies `mdl-color-text--${textColor}`
 
 ## Components

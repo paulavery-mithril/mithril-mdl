@@ -1,30 +1,26 @@
 # Layout
+## Layout
+*mixin*
+
+**Tag:** `div`  
+**Class:** `mdl-layout mdl-js-layout`
+
+**Attributes:**
+* `fixedTabs`: Sets `mdl-layout--fixed-tabs`
+* `fixedDrawer`: Sets `mdl-layout--fixed-drawer`
+* `fixedHeader`: Sets `mdl-layout--fixed-header`
+
 ## Content
 *mixin*
 
 **Tag:** `main`  
 **Class:** `mdl-layout__content`
 
-**Attributes:**
-* `expand`: Sets `mdl-card--expand`
-* `border`: Sets `mdl-card--border`
-
-## Layout
-*mixin*
-
-**Tag:** `header`  
-**Class:** `mdl-layout__header`
-
-**Attributes:**
-* `scroll`: Sets `mdl-layout__header--scroll`
-* `waterfall`: Sets `mdl-layout__header--waterfall`
-* `transparent`: Sets `mdl-layout__header--transparent`
-
 ## Spacer
 *mixin*
 
 **Tag:** `div`  
-**Class:** `mdl-layout__spacer`
+**Class:** `mdl-layout-spacer`
 
 ## Title
 *mixin*

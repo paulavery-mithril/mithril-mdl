@@ -5,15 +5,14 @@
 **Tag:** `div`  
 **Class:** `mdl-card`
 
-**Attributes:**
-* `shadow`: Sets `mdl-shadow--${shadow}db`. Should be 2, 3, 4, 6, 8, or 16
-
 ## CardTitle
 **Tag:** `div`  
-**Class:** `mdl-card--title`
+**Class:** `mdl-card__title`
 
 **Attributes:**
 * `expand`: Sets `mdl-card--expand`
+
+A child `<h2>` element will be created which all children will be placed into.
 
 ## CardText
 *mixin*
